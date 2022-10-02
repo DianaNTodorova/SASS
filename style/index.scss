@@ -74,6 +74,13 @@
   grid-template-rows: repeat(32, 1fr);
   row-gap: 1em;
   column-gap: 1em;
+  img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+  }
   &_element-1 {
     position: relative;
     overflow: hidden;
@@ -145,11 +152,4 @@
     grid-column: 7 / 10;
     grid-row: 27 / 33;
   }
-}
-.grid_container img {
-  width: 0;
-  height: 0;
-  min-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
 }

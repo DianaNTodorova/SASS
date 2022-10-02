@@ -137,6 +137,15 @@ header li {
           column-gap: 1em;
 }
 
+.grid_container img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .grid_container_element-1 {
   position: relative;
   overflow: hidden;
@@ -266,14 +275,5 @@ header li {
   -ms-grid-row: 27;
   -ms-grid-row-span: 6;
   grid-row: 27 / 33;
-}
-
-.grid_container img {
-  width: 0;
-  height: 0;
-  min-height: 100%;
-  min-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 /*# sourceMappingURL=index.css.map */
