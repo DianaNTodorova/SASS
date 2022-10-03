@@ -52,6 +52,9 @@
   padding-bottom: 20px;
   flex-direction: column;
   justify-content: flex-end;
+  @include smalltext();
+  font-size: 18px;
+  line-height: 23px;
   hr {
     margin-left: 0;
   }
@@ -189,10 +192,7 @@
     flex-direction: column;
     flex-grow: 0.5;
     flex-basis: 0;
-    @include middletext();
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+
     p {
       margin-bottom: 20px;
     }
@@ -200,7 +200,7 @@
     &-2 {
       position: absolute;
       top: 60%;
-      width: 15%;
+      width: 13%;
       p {
         margin-bottom: 20px;
       }
@@ -212,6 +212,9 @@
     align-items: flex-end;
     flex-grow: 1;
     flex-basis: 0;
+    @include middletext();
+    font-size: 16px;
+    line-height: 20px;
     &-2 {
       position: absolute;
       top: 60%;
@@ -221,4 +224,19 @@
 .section-4_content {
   margin-top: 0;
   border-bottom: 1px solid #d8d8d8;
+}
+.middle_title {
+  @include titletext();
+  font-size: 18px;
+  line-height: 23px;
+}
+.middle_text {
+  @include titletext();
+  font-size: 16px;
+  line-height: 20px;
+}
+.small_text {
+  @include smalltext();
+  font-size: 16px;
+  line-height: 26px;
 }

@@ -194,6 +194,14 @@ footer li {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #111111;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .section-1__text hr {
@@ -453,12 +461,6 @@ footer li {
           flex-grow: 0.5;
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
-  font-family: "Mulish", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .section-3_content_collumn-3 p,
@@ -470,7 +472,7 @@ footer li {
 .section-4_content_collumn-3-2 {
   position: absolute;
   top: 60%;
-  width: 15%;
+  width: 13%;
 }
 
 .section-3_content_collumn-3-2 p,
@@ -495,6 +497,11 @@ footer li {
           flex-grow: 1;
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .section-3_content_collumn-4-2,
@@ -506,5 +513,32 @@ footer li {
 .section-4_content {
   margin-top: 0;
   border-bottom: 1px solid #d8d8d8;
+}
+
+.middle_title {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.middle_text {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.small_text {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #111111;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 26px;
 }
 /*# sourceMappingURL=index.css.map */
