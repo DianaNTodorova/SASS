@@ -1,0 +1,90 @@
+@import "header";
+@import "footer";
+@mixin titletext {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+@mixin middletext {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin smalltext {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #111111;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.section_box {
+  display: flex;
+  flex-direction: row;
+  max-width: 1110px;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  &_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 475px;
+    width: 100%;
+    h1 {
+      @include titletext();
+      font-size: 40px;
+      line-height: 55px;
+    }
+    p {
+      @include smalltext();
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+  &_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 475px;
+    width: 100%;
+    input {
+      border: none;
+      padding-bottom: 16px;
+      margin-top: 45px;
+      border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+      &:hover {
+        filter: brightness(95%);
+      }
+      &::placeholder {
+        @include titletext();
+        font-size: 16px;
+        line-height: 20px;
+        color: #111111;
+        mix-blend-mode: normal;
+        opacity: 0.6;
+      }
+    }
+    button {
+      width: 125px;
+      height: 50px;
+      background-color: #4a4ff2;
+      color: #ffff;
+      border: none;
+      margin-top: 45px;
+      &:hover {
+        background-color: #ffff;
+        color: #4a4ff2;
+        border: 1px solid #4a4ff2;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}
+.section_map {
+  max-width: 1110px;
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
