@@ -206,6 +206,7 @@ footer li {
 
 .section_box_form input {
   border: none;
+  width: 475px;
   padding-bottom: 16px;
   margin-top: 45px;
   border-bottom: 1px solid rgba(151, 151, 151, 0.3);
